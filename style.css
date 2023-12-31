@@ -54,9 +54,7 @@ li:first-child {
 
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
+
 
     .image-box {
         padding: 1em 0;
