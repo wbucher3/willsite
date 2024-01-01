@@ -21,22 +21,20 @@ a {
     color: black;
     cursor: pointer;
 }
-ul {
-    list-style-type: none;
-    margin: 0.25em;
-    padding: 0;
-}
-li {
-    float: left;
-    padding: 0 1em;
-    border-right: 1px solid black;
-}
-li:first-child {
-    border-left: 1px solid black;
-}
 
 .table-of-contents {
     margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+}
+.nav-item {
+    padding: 0;
+    margin: 0 1em;
+
+    border: 1px solid black;
+    border-radius: 3pt;
+    padding: 2px;
+
 }
 
 .flex-box {
@@ -95,6 +93,17 @@ th, td {
     }
     .bowling-chart {
         height: 200px;
+    }
+
+    .table-of-contents {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .nav-item {
+        margin: 0.25em 0;
+    }
+    .nav-item :last-child {
+        margin: 0;
     }
 
 }
