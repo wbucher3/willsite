@@ -92,15 +92,15 @@ th, td {
         padding: 1em 0;
     }
     .bowling-chart {
-        height: 200px;
+        height: 100px;
     }
 
     .table-of-contents {
-        flex-direction: column;
+        flex-direction: row;
         margin-bottom: 0;
     }
     .nav-item {
-        margin: 0.25em 0;
+        margin: 0.25em 0.25em;
     }
     .nav-item :last-child {
         margin: 0;
