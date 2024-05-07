@@ -1,0 +1,145 @@
+html,
+body,
+#root {
+    display: block;
+    position: relative; 
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+#container.home {
+    height: 100%;
+}
+
+#container.home header {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#container.home footer {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#container.home .pc {
+    display: block;    
+}
+
+#container.home .mb {
+    display: none;
+}
+#container.home main {
+    width: 100%;
+    height: 100%;
+}
+#container.home main>.con {
+    width: 100%;
+    height: 100%;
+}
+
+#container.home main>.con>section {
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    position: relative;
+}
+#container.home main>.con>section.pc {
+    position: relative;
+    height: auto;
+}
+
+#container.home main>.con>section img {
+    width: 100%;
+}
+#container.home section {
+    overflow-x: hidden;
+}
+#container.home .sns-bt {
+    display: flex !important;
+    justify-content: right;
+    padding: 40px;
+    gap: 25px;
+}
+
+#container.home .sns-bt .icons img {
+    width: 36px;
+}
+#container.home footer.footer {
+    padding: 20px;
+}
+
+#container.home footer.footer img {
+    width: 4.3333333333vw;
+    cursor: pointer;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+@media screen and (max-width:900px) {
+    #container.home .mb {
+        display: block !important;
+    }
+
+    #container.home .pc {
+        display: none !important;
+    }
+    
+    #container.home main>.con>section.mb {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px 0;
+    }
+    
+    #container.home main>.con>section img {
+        height: auto;
+    }
+    
+    #container.home footer {
+        position: relative;
+    }
+
+    #container.home footer .mb {
+        text-align: center;
+    }
+
+    #container.home footer.footer {
+        padding: 0 0 4.4444444444vw 0;
+    }
+
+    #container.home footer.footer img {
+        width: 27.5555555556vw;
+    }
+
+    #container.home footer.footer>ul {
+        display: flex !important;
+        justify-content: center;
+        gap: 4.4444444444vw;
+        padding: 0 0 4.8888888889vw 0;
+    }
+
+
+    #container.home .sns-bt .icons img {
+        width: 7.2222222222vw;
+    }
+
+}

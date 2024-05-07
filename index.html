@@ -1,52 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="--vh: 8.83px;">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
     <title>Willsite</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homepage-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <!-- header -->
-    <div>
-        <h1><a href="index.html">World of Will</a></h1>
-    </div>
+    <div id="root">
+        <div id="container" class="home">
 
-    <!-- table of contents -->
-    <div class="table-of-contents">    
-        <a class="nav-item" href="birds.html">Bird Photos</a>
-        <a class="nav-item" href="ricoh.html">Ricoh B&W Series</a>
-        <a class="nav-item" href="bowling.html">Bowling Journey</a>
-    </div>
+            <header>
+                <ul class="sns-bt pc">
+                    <li class="icons"><a href="birds.html"><img src="icons/bird-icon.png"></a></li>
+                    <li class="icons"><a href="bowling.html"><img src="icons/bowling-ball-icon.png"></a></li>
+                    <li class="icons"><a href="albums.html"><img src="icons/vinyl-icon.png"></a></li>
+                    <li class="icons"><a href="ricoh.html"><img src="icons/photo-icon.png"></a></li>
+                    
+                    
+                </ul>
+            </header>
+            
+            <main>
+                <div class="con">
 
 
-    <!-- main content -->
 
-    <div class="flex-box">
-        <p>
-            This website serves as a place to hold information all about Will.
-        </p>
-        <p>
-            Please use the navigation bar to find information about the desired subject.
-        </p>
+                    <section class="pc">
+                        <img class="bg" src="bird.jpg" alt="bird"/>
+                        <footer class="footer"><a class="pc">Cookie Policy</a></footer>
+                    </section>
 
-        <div class="image-box">
-            <img class="image" src="photos/self-phot.jpg" />
-            <!-- <p class="description">Male House Finch</p> -->
+                    <section class="mb">
+                        <img class="bg" src="bird.jpg" alt="bird"/>
+                        <footer class="footer">
+                            <ul class="sns-bt mb">
+                                <li class="icons"><a><img src="image.png"></a></li>
+                                <li class="icons"><a><img src="image.png"></a></li>
+                                <li class="icons"><a><img src="image.png"></a></li>
+                            </ul>
+                            <a class="pc">Cookie Policy</a>
+                        </footer>
+                    </section>
+
+
+
+                </div>
+                
+            </main>
         </div>
-
-        <p>
-            Thank you for visiting :)
-        </p>
     </div>
 
-    <!-- footer -->
 
   </body>
 </html>
